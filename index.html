@@ -1,0 +1,44 @@
+
+<body>
+  <h1 class="display-2">Welcome to Serverless Form!</h1>
+
+  <form action="/keep-me-posted" 
+        method="post" 
+        enctype="application/x-www-form-urlencoded">
+    <fieldset>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email address</label>
+        <input type="email"
+               class="form-control"
+               id="email"
+               name="email"
+               aria-describedby="emailHelp" required>
+        <div id="emailHelp" class="form-text">
+          We'll never share your email with anyone else.
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="fullName" class="form-label">Full name</label>
+        <input type="text"
+               class="form-control"
+               id="fullName"
+               name="fullName"
+               maxlength="250" required>
+      </div>
+      <div class="mb-3">
+        <label for="comment" class="form-label">Comment</label>
+        <textarea class="form-control"
+                  id="comment"
+                  name="comment"
+                  rows="3"
+                  maxlength="250">
+        </textarea>
+      </div>
+      <button type="submit"
+              class="btn btn-primary"
+              id="submitIntentionBtn">
+        Keep me posted!
+      </button>
+    </fieldset>
+  </form>
+</body>
